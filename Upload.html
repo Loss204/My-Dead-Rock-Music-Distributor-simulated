@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/scripts.js" defer></script>
+    <title>Upload Music - Music Distribution API</title>
+</head>
+<body>
+    <header>
+        <h1>Upload Your Music</h1>
+    </header>
+    <main>
+        <form id="upload-form">
+            <label for="title">Song Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="artist">Artist Name:</label>
+            <input type="text" id="artist" name="artist" required>
+
+            <label for="audio">Audio File:</label>
+            <input type="file" id="audio" name="audio" accept="audio/*" required>
+
+            <label for="cover">Cover Art:</label>
+            <input type="file" id="cover" name="cover" accept="image/*" required>
+
+            <fieldset>
+                <legend>Select Distribution Platforms:</legend>
+                <label><input type="checkbox" name="platform" value="Spotify"> Spotify</label>
+                <label><input type="checkbox" name="platform" value="Apple Music"> Apple Music</label>
+                <label><input type="checkbox" name="platform" value="Amazon Music"> Amazon Music</label>
+                <label><input type="checkbox" name="platform" value="YouTube Music"> YouTube Music</label>
+            </fieldset>
+
+            <button type="submit">Upload</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Music Distribution API</p>
+    </footer>
+</body>
+  </html>
